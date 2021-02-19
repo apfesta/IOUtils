@@ -40,7 +40,7 @@
 	   	<repository>
      			<id>github</id>
      			<name>GitHub MixedNutz Apache Maven Packages</name>
-     			<url>https://maven.pkg.github.com/apfesta/${project.artifactId}</url>
+     			<url>https://maven.pkg.github.com/apfesta/IOUtils</url>
    		</repository>
 	</distributionManagement>
 
@@ -49,8 +49,6 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
-		
-		<nexus.host>nexus:8081</nexus.host>
 	</properties>
 	
 	<build>
