@@ -33,18 +33,16 @@
 	<tag>HEAD</tag>
     </scm>
 
-    <distributionManagement>
-	<repository>
-		<id>releases</id>
-		<name>Release Repository</name>
-		<url>http://${nexus.host}/content/repositories/releases</url>
-	</repository>
-	<snapshotRepository>
-		<id>snapshots</id>
-		<name>Snapshot Repository</name>
-		<url>http://${nexus.host}/content/repositories/snapshots</url>
-	</snapshotRepository>
-    </distributionManagement>
+    <!-- 
+		Deploy JARs to GitHub
+	 -->
+	<distributionManagement>
+	   	<repository>
+     			<id>github</id>
+     			<name>GitHub MixedNutz Apache Maven Packages</name>
+     			<url>https://maven.pkg.github.com/mixednutz/${project.artifactId}</url>
+   		</repository>
+	</distributionManagement>
 
 	
 
