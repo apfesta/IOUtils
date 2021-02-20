@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
     
     <name>IOUtils</name>
-    <version>0.2.3-SNAPSHOT</version>
+    <version>0.2.3</version>
     
     <!-- 
 		Using Spring Boot Starter to keep dependencies syncronized across projects
