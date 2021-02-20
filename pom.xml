@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
     
     <name>IOUtils</name>
-    <version>0.2.1</version>
+    <version>0.2.3-SNAPSHOT</version>
     
     <!-- 
 		Using Spring Boot Starter to keep dependencies syncronized across projects
@@ -33,26 +33,22 @@
 	<tag>HEAD</tag>
     </scm>
 
-    <distributionManagement>
-	<repository>
-		<id>releases</id>
-		<name>Release Repository</name>
-		<url>http://${nexus.host}/content/repositories/releases</url>
-	</repository>
-	<snapshotRepository>
-		<id>snapshots</id>
-		<name>Snapshot Repository</name>
-		<url>http://${nexus.host}/content/repositories/snapshots</url>
-	</snapshotRepository>
-    </distributionManagement>
+    <!-- 
+		Deploy JARs to GitHub
+	 -->
+	<distributionManagement>
+	   	<repository>
+     			<id>github</id>
+     			<name>GitHub MixedNutz Apache Maven Packages</name>
+     			<url>https://maven.pkg.github.com/apfesta/IOUtils</url>
+   		</repository>
+	</distributionManagement>
 
 	
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
-		
-		<nexus.host>nexus:8081</nexus.host>
 	</properties>
 	
 	<build>
